@@ -1,0 +1,9 @@
+Hey guys!
+
+This is just a directory for jade files.
+You can compile the files here to views to app/views
+	Files here organized are to match their respective directory (ex: jade/home/index.jade matches views/home/index.html)
+
+If you don't want jade, just delete this directory (jade/) and be on with yourself.
+
+If you would like to mix PHP and jade, you'll have to work on your own for that! ;)

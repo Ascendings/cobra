@@ -1,0 +1,9 @@
+Sup, homies?
+
+This is just a directory for sass files.
+You can compile the files here to views to public/css
+	Files here organized are to match their respective directory (ex: sass/main.sass matches public/css/main.css)
+
+If you don't want sass, just delete this directory (sass/) and be on with yourself.
+
+I know some people like SCSS instead of SASS. Just use .scss files instead, you'll be fine! ;)
