@@ -50,7 +50,20 @@ function loadSharedView($file, $data = '') {
 }
 
 // Loads an error page
+// This will load an html file before a php file!
 function loadError($header) {
-	include '../app/views/error/' . $header . '.php';
+	$file = '../app/views/error/' . $header . '.html';
+	if (file_exists($file)) {
+		include $file;
+		return true;
+	}
+	
+	$file = '../app/views/error/' . $header . '.php';
+	if (file_exists($file)) {
+		include $file;
+		return true;
+	}
+
+	return false;
 }
 

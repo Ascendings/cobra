@@ -16,6 +16,7 @@ loadSharedView('hello.html');
 ?>
 
 <!-- You can put HTML here -->
+<p>Hi! I'm coming from the home/index view!</p>
 
 <?php
 
