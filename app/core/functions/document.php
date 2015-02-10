@@ -1,13 +1,11 @@
 <?php
 
 // Echoes out the HTML needed for the header and opens the body tag
-function renderHeader($data = ['title' => '', 'css' => [], 'js' => []]) {
+function renderHeader($data = ['title' => '', 'meta' => [], 'css' => [], 'js' => []]) {
 	echo '<!DOCTYPE html><html><head>'; // Document type and html opener
 	echo '<meta charset="UTF-8">'; // HTML charset
 	echo '<title>' . $data['title'] . '</title>'; // Page title
-	echo '<meta name="author" content="Gregory Ballantine">'; // Author
 	// Load external CSS resources
-	echo '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">';
 	loadResources($data, 'css');
 	// Load external Javascript resources
 	loadResources($data, 'js');
@@ -50,3 +48,9 @@ function loadSharedView($file, $data = '') {
 		die('The shared view "' . $file . '" does not exist.');
 	}
 }
+
+// Loads an error page
+function loadError($header) {
+	include '../app/views/error/' . $header . '.php';
+}
+
