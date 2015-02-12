@@ -2,8 +2,7 @@ Sup, homies?
 
 This is just a directory for sass files.
 You can compile the files here to views to public/css
-Files here are organized to match their respective directory (ex: sass/main.sass matches public/css/main.css)
-By the way, I highly recommend you install bourbon, if you're going to continue with sass! It's friggin' amazing, and its mixins are extremely useful.
+main.sass is meant to be the sass file that is loaded by web pages (public/css/main.css). Compile this how you wish.
 
 If you don't want sass, just delete this directory (sass/) and be on with yourself.
 
